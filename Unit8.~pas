@@ -1,0 +1,54 @@
+unit Unit8;
+
+interface
+
+uses
+  Windows, Messages, SysUtils, Variants, Classes, Graphics, Controls, Forms,
+  Dialogs, StdCtrls, DBCtrls, Mask;
+
+type
+  TForm8 = class(TForm)
+    Label3: TLabel;
+    DBEdit3: TDBEdit;
+    Label4: TLabel;
+    DBEdit4: TDBEdit;
+    Label5: TLabel;
+    DBEdit5: TDBEdit;
+    Label6: TLabel;
+    DBEdit6: TDBEdit;
+    Label7: TLabel;
+    DBLookupComboBox1: TDBLookupComboBox;
+    Label8: TLabel;
+    DBLookupComboBox2: TDBLookupComboBox;
+    Button1: TButton;
+    Button2: TButton;
+    procedure Button1Click(Sender: TObject);
+    procedure Button2Click(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  Form8: TForm8;
+
+implementation
+
+uses Unit2;
+
+{$R *.dfm}
+
+procedure TForm8.Button1Click(Sender: TObject);
+begin
+DataModule2.Table4.Post;
+Close;
+end;
+
+procedure TForm8.Button2Click(Sender: TObject);
+begin
+DataModule2.Table4.Cancel;
+Close;
+end;
+
+end.

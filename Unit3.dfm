@@ -1,0 +1,166 @@
+object Form3: TForm3
+  Left = 320
+  Top = 258
+  Width = 1088
+  Height = 563
+  Caption = 'Form3'
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'MS Sans Serif'
+  Font.Style = []
+  OldCreateOrder = False
+  PixelsPerInch = 96
+  TextHeight = 13
+  object Label1: TLabel
+    Left = 48
+    Top = 32
+    Width = 31
+    Height = 13
+    Caption = #1056#1072#1081#1086#1085
+  end
+  object Label2: TLabel
+    Left = 576
+    Top = 32
+    Width = 87
+    Height = 13
+    Caption = #1055#1072#1089#1087#1086#1088#1090#1085#1080#1081' '#1089#1090#1086#1083
+  end
+  object DBGrid1: TDBGrid
+    Left = 32
+    Top = 56
+    Width = 505
+    Height = 161
+    DataSource = DataModule2.DataSource1
+    TabOrder = 0
+    TitleFont.Charset = DEFAULT_CHARSET
+    TitleFont.Color = clWindowText
+    TitleFont.Height = -11
+    TitleFont.Name = 'MS Sans Serif'
+    TitleFont.Style = []
+    Columns = <
+      item
+        Expanded = False
+        FieldName = 'RCode'
+        Title.Caption = #1050#1086#1076' '#1088#1072#1081#1086#1085#1091
+        Visible = True
+      end
+      item
+        Expanded = False
+        FieldName = 'RName'
+        Title.Caption = #1056#1072#1081#1086#1085
+        Visible = True
+      end>
+  end
+  object DBGrid2: TDBGrid
+    Left = 568
+    Top = 56
+    Width = 497
+    Height = 161
+    DataSource = DataModule2.DataSource2
+    TabOrder = 1
+    TitleFont.Charset = DEFAULT_CHARSET
+    TitleFont.Color = clWindowText
+    TitleFont.Height = -11
+    TitleFont.Name = 'MS Sans Serif'
+    TitleFont.Style = []
+    Columns = <
+      item
+        Expanded = False
+        FieldName = 'PCode'
+        Title.Caption = #1050#1086#1076' '#1055#1057
+        Visible = True
+      end
+      item
+        Expanded = False
+        FieldName = 'PName'
+        Title.Caption = #1053#1072#1079#1074#1072' '#1055#1057
+        Width = 169
+        Visible = True
+      end
+      item
+        Expanded = False
+        FieldName = 'RNameTest'
+        Title.Caption = #1056#1072#1081#1086#1085
+        Visible = True
+      end>
+  end
+  object Button1: TButton
+    Left = 984
+    Top = 16
+    Width = 75
+    Height = 25
+    Caption = #1042#1080#1093#1110#1076
+    TabOrder = 2
+    OnClick = Button1Click
+  end
+  object GroupBox1: TGroupBox
+    Left = 32
+    Top = 240
+    Width = 513
+    Height = 73
+    TabOrder = 3
+    object Button2: TButton
+      Left = 16
+      Top = 24
+      Width = 113
+      Height = 25
+      Caption = #1044#1086#1076#1072#1090#1080
+      TabOrder = 0
+      OnClick = Button2Click
+    end
+    object Button3: TButton
+      Left = 192
+      Top = 24
+      Width = 113
+      Height = 25
+      Caption = #1047#1084#1110#1085#1080#1090#1080
+      TabOrder = 1
+      OnClick = Button3Click
+    end
+    object Button4: TButton
+      Left = 360
+      Top = 24
+      Width = 113
+      Height = 25
+      Caption = #1042#1080#1076#1072#1083#1080#1090#1080
+      TabOrder = 2
+      OnClick = Button4Click
+    end
+  end
+  object GroupBox2: TGroupBox
+    Left = 560
+    Top = 240
+    Width = 497
+    Height = 73
+    TabOrder = 4
+    object Button5: TButton
+      Left = 24
+      Top = 24
+      Width = 113
+      Height = 25
+      Caption = #1044#1086#1076#1072#1090#1080
+      TabOrder = 0
+      OnClick = Button5Click
+    end
+    object Button6: TButton
+      Left = 184
+      Top = 24
+      Width = 113
+      Height = 25
+      Caption = #1047#1084#1110#1085#1080#1090#1080
+      TabOrder = 1
+      OnClick = Button6Click
+    end
+    object Button7: TButton
+      Left = 344
+      Top = 24
+      Width = 121
+      Height = 25
+      Caption = #1042#1080#1076#1072#1083#1080#1090#1080
+      TabOrder = 2
+      OnClick = Button7Click
+    end
+  end
+end
